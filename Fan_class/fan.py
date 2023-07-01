@@ -24,7 +24,7 @@ class Fan:
         return self.__on
 
     def set_on(self, on):
-        self._on = on
+        self.__on = on
 
     # Get and set the radius
     def get_radius(self):
