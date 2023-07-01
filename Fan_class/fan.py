@@ -19,7 +19,13 @@ class Fan:
     def set_speed(self, speed):
         self.__speed = speed
 
-# Set the fan on
+    # Set the fan on
+    def is_on(self):
+        return self.__on
+
+    def set_on(self, on):
+        self._on = on
+
 # Get and set the radius
 # Get and set the color
 # Run the program
