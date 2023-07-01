@@ -1,5 +1,8 @@
 # This program defines a simple car class that displays car information and control car speed with accelerate and brake buttons.
 
+#Import tkinter for designs
+import tkinter as tk
+
 # Create a class for Car
 class Car:
     def __init_(self, year_model, make):
