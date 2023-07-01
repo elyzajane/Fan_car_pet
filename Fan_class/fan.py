@@ -43,5 +43,27 @@ class Fan:
 
     def set_color(self, color):
         self.__color = color
+# Create a class for gui
+class FanPropertiesGUI:
+    def __init__(self):
+        self.window = tk.Tk()
+        self.window.title("Fan Properties")
+        self.window.configure(bg='lightyellow')
+        self.window.geometry("400x300")  
+        
+        # Create labels to display fan properties
+        fan1_button = tk.Button(self.window, text="Fan 1", command=lambda: self.display_fan_properties(
+            Fan(speed=Fan.FAST, radius=10, color='yellow', on=True), "Fan 1"), bg='lightblue')
+        fan1_button.pack(pady=30)
 
+        fan2_button = tk.Button(self.window, text="Fan 2", command=lambda: self.display_fan_properties(
+            Fan(speed=Fan.MEDIUM, radius=5, color='blue', on=False), "Fan 2"), bg='lightpink')
+        fan2_button.pack(pady=30)
+
+    def display_fan_properties(self, fan, fan_number):
+        messagebox.showinfo(f"Fan {fan_number} Properties", f"Speed: {fan.get_speed()}\n"
+                                                           f"Radius: {fan.get_radius()}\n"
+                                                           f"Color: {fan.get_color()}\n"
+                                                           f"On: {fan.is_on()}")
+        
 # Run the program
