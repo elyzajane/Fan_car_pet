@@ -77,5 +77,7 @@ class PetGUI:
     def display_pet_info(self):
         info = f"Name: {self.pet.get_name()}\nAnimal Type: {self.pet.get_animal_type()}\nAge: {self.pet.get_age()}"
         messagebox.showinfo("Pet Information", info)
-        
-# Run the main program
+
+    # Run the main program
+    def run(self):
+        self.window.mainloop()
