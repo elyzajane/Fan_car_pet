@@ -26,5 +26,17 @@ class Pet:
     def get_age(self):
         return self__age
     
-# Submit and display the info given by the user
+    # Submit and display the info given by the user
+    def submit_pet_info(self):
+        name = self.name_entry.get()
+        animal_type = self.type_entry.get()
+        age = self.age_entry.get()
+
+        self.pet.set_name(name)
+        self.pet.set_animal_type(animal_type)
+        self.pet.set_age(age)
+
+        self.display_pet_info()
+
+
 # Run the main program
