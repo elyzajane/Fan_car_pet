@@ -36,7 +36,7 @@ class CarGUI:
 
         self.car = Car(2022, "Toyota")
 
-        self.info_frame = tk.LabelFrame(self.window, text="Car Information", padx=60, pady=30, fg="black", bg="lightpink")
+        self.info_frame = tk.LabelFrame(selfwindow, text="Car Information", padx=60, pady=30, fg="black", bg="lightpink")
         self.info_frame.pack(pady=10)
 
         self.info_label = tk.Label(self.info_frame, text=self.car.get_info(), fg="black", bg="lightblue")
@@ -71,3 +71,9 @@ class CarGUI:
         self.speed_label.config(text=speed)
     
 # Run the main program
+    def run(self):
+        self.window.mainloop()
+
+# Create an instance of the CarGUI class
+gui = CarGUI()
+gui.run()
