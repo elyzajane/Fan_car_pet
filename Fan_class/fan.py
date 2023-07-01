@@ -1,5 +1,9 @@
 # This program defines a Fan class to represent a fan with methods to access and modify its speed, on/off state, radius, and color.
 
+# Import tkinter for designs
+import tkinter as tk
+from tkinter import messagebox
+
 # Create a class for fan
 class Fan:
     SLOW = 1
