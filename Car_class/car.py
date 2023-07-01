@@ -20,5 +20,8 @@ class Car:
     def get_speed(self):
         return self.__speed
     
-# Get the info of the car
+    # Get the info of the car
+    def get_info(self):
+        return f"Brand: {self.__make}\Year Model: {self.__year_model}"
+    
 # Run the main program
