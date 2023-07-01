@@ -33,5 +33,11 @@ class Fan:
     def set_radius(self, radius):
         self.__radius = radius
 
-# Get and set the color
+    # Get and set the color
+    def get_color(self):
+        return self.__color
+
+    def set_color(self, color):
+        self.__color = color
+
 # Run the program
