@@ -7,6 +7,18 @@ class Car:
         self.__make = make
         self.__speed = 0
 
-# Use def functions to accelerate and brake to set the car's speed
+    # Use def functions to accelerate and brake to set the car's speed
+    def accelerate(self):
+        self.__speed += 5
+
+    def brake(self):
+        if self.__speed >= 5:
+            self.__speed -= 5
+        else:
+            self.__speed = 0
+
+    def get_speed(self):
+        return self.__speed
+    
 # Get the info of the car
 # Run the main program
