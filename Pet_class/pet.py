@@ -3,6 +3,7 @@
 # Import tkinter for designs
 import tkinter as tk
 from tkinter import messagebox
+
 # Create a class for pet
 class Pet:
     def __init__(self):
@@ -27,7 +28,7 @@ class Pet:
         return self.__animal_type
 
     def get_age(self):
-        return self__age
+        return self.__age
 
 # Create another class for gui
 class PetGUI:
@@ -81,7 +82,7 @@ class PetGUI:
     # Run the main program
     def run(self):
         self.window.mainloop()
-        
+
 # Run the gui
 gui = PetGUI()
 gui.run()
