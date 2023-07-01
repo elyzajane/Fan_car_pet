@@ -67,3 +67,9 @@ class FanPropertiesGUI:
                                                            f"On: {fan.is_on()}")
         
 # Run the program
+    def run(self):
+        self.window.mainloop()
+
+# Run the gui properties
+gui = FanPropertiesGUI()
+gui.run()
