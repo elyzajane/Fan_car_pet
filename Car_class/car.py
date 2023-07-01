@@ -1,6 +1,12 @@
 # This program defines a simple car class that displays car information and control car speed with accelerate and brake buttons.
 
 # Create a class for Car
+class Car:
+    def __init_(self, year_model, make):
+        self.__year_model = year_model
+        self.__make = make
+        self.__speed = 0
+
 # Use def functions to accelerate and brake to set the car's speed
 # Get the info of the car
 # Run the main program
