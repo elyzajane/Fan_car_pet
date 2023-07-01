@@ -2,7 +2,7 @@
 
 # Import tkinter for designs
 import tkinter as tk
-
+from tkinter import messagebox
 # Create a class for pet
 class Pet:
     def __init__(self):
@@ -72,5 +72,10 @@ class PetGUI:
 
         self.display_pet_info()
 
+        messagebox.showinfo("Success!", "Pet information saved! Thank you!")
 
+    def display_pet_info(self):
+        info = f"Name: {self.pet.get_name()}\nAnimal Type: {self.pet.get_animal_type()}\nAge: {self.pet.get_age()}"
+        messagebox.showinfo("Pet Information", info)
+        
 # Run the main program
