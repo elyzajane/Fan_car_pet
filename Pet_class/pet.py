@@ -81,3 +81,7 @@ class PetGUI:
     # Run the main program
     def run(self):
         self.window.mainloop()
+        
+# Run the gui
+gui = PetGUI()
+gui.run()
