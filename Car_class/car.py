@@ -5,7 +5,7 @@ import tkinter as tk
 
 # Create a class for Car
 class Car:
-    def __init_(self, year_model, make):
+    def __init__(self, year_model, make):
         self.__year_model = year_model
         self.__make = make
         self.__speed = 0
@@ -25,7 +25,7 @@ class Car:
     
     # Get the info of the car
     def get_info(self):
-        return f"Brand: {self.__make}\Year Model: {self.__year_model}"
+        return f"Brand: {self.__make}\nYear Model: {self.__year_model}"
     
 # Create a class for gui, set labels and designs
 class CarGUI:
@@ -36,7 +36,7 @@ class CarGUI:
 
         self.car = Car(2022, "Toyota")
 
-        self.info_frame = tk.LabelFrame(selfwindow, text="Car Information", padx=60, pady=30, fg="black", bg="lightpink")
+        self.info_frame = tk.LabelFrame(self.window, text="Car Information", padx=60, pady=30, fg="black", bg="lightpink")
         self.info_frame.pack(pady=10)
 
         self.info_label = tk.Label(self.info_frame, text=self.car.get_info(), fg="black", bg="lightblue")
